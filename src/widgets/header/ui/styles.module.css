@@ -1,0 +1,41 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(229, 231, 235);
+    box-sizing: border-box;
+    padding: 5px 20px;
+}
+
+.nav {
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 5px 20px;
+    background-color: white;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.theme {
+    width: 70px;
+    height: auto;
+}
+
+.link {
+    color: black;
+}
+
+.isActive {
+    color: blueviolet;
+    font-weight: 900;
+}

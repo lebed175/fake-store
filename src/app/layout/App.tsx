@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom";
 import { Header } from "../../widgets/header/ui/Header";
-import "./App.css";
+import styles from "./App.module.css";
 
 function App() {
   return (
     <>
       <Header></Header>
 
-      <main>
+      <main className={styles.container}>
         <Outlet></Outlet>
       </main>
     </>
