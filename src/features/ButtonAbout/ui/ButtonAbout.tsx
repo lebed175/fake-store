@@ -5,14 +5,12 @@ interface Props {
   type: "blue" | "dark";
 }
 
-export default function ButtonStart({ type }: Props) {
+export default function ButtonAbout({ type }: Props) {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/products");
+    navigate("/about");
   };
 
-  return (
-    <Button text="Start Shopping" onClick={handleClick} type={type}></Button>
-  );
+  return <Button text="Learn more" onClick={handleClick} type={type}></Button>;
 }
