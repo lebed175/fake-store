@@ -1,13 +1,15 @@
+import { useGetProductsQuery } from "../../../entities/productCard/api/productApi";
 import styles from "./styles.module.css";
 
 interface Props {
   text: string;
   onClick: () => void;
+  type: "blue" | "dark";
 }
 
-export const Button = ({ text, onClick }: Props) => {
+export const Button = ({ text, onClick, type }: Props) => {
   return (
-    <button className={styles.button} onClick={onClick}>
+    <button onClick={onClick} className={`${styles.button} ${styles[type]}`}>
       {text}
     </button>
   );
